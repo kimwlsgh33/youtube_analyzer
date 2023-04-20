@@ -1,5 +1,4 @@
 from pytube.captions import os
-import youtube
 
 # url = input('Enter a YouTube URL: ')
 # url = 'https://www.youtube.com/watch?v=m4ZVHMoPcnc'
@@ -7,7 +6,6 @@ import youtube
 url = "https://youtube.com/playlist?list=PL0vfts4VzfNiI1BsIK5u7LpPaIDKMJIDN"
 
 # yt = youtube.get_data(url)
-
 
 def print_video_info(yt):
     print('Title: ', yt.title)
@@ -36,11 +34,10 @@ def print_playlist_info(pl):
 # 스트림을 다운로드
 # youtube.download(stream)
 
+# pl = youtube.get_playlist(url)
+
 # for url in pl.video_urls[:3]:
 #     yt = youtube.get_data(url)
 #     print_video_info(yt)
 
-# pl = youtube.get_playlist(url)
 # print_playlist_info(pl)
-API_KEY = os.environ.get('OPENAI_API_KEY')
-print(API_KEY)
